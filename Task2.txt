@@ -1,0 +1,54 @@
+sj@sj-virtual-machine:~/Assignment1$ touch task2
+sj@sj-virtual-machine:~/Assignment1$ ls
+task1  task2
+sj@sj-virtual-machine:~/Assignment1$ ls -l task2
+-rw-rw-r-- 1 sj sj 0 May 26 23:00 task2
+sj@sj-virtual-machine:~/Assignment1$ ^C
+sj@sj-virtual-machine:~/Assignment1$ mkdir task3
+sj@sj-virtual-machine:~/Assignment1$ ls
+task1  task2  task3
+sj@sj-virtual-machine:~/Assignment1$ cd task3
+sj@sj-virtual-machine:~/Assignment1/task3$ rm task2
+rm: cannot remove 'task2': No such file or directory
+sj@sj-virtual-machine:~/Assignment1/task3$ cd ..
+sj@sj-virtual-machine:~/Assignment1$ rm task2
+sj@sj-virtual-machine:~/Assignment1$ ls
+task1  task3
+sj@sj-virtual-machine:~/Assignment1$ mkdir dir1 dir2
+sj@sj-virtual-machine:~/Assignment1$ ls
+dir1  dir2  task1  task3
+sj@sj-virtual-machine:~/Assignment1$ ls -lR
+.:
+total 16
+drwxrwxr-x 2 sj sj 4096 May 26 23:16 dir1
+drwxrwxr-x 2 sj sj 4096 May 26 23:16 dir2
+-rwxrwxrwx 1 sj sj   54 May 26 22:56 task1
+drwxrwxr-x 2 sj sj 4096 May 26 23:13 task3
+
+./dir1:
+total 0
+
+./dir2:
+total 0
+
+./task3:
+total 0
+sj@sj-virtual-machine:~/Assignment1$ touch file1  file2 file 3
+sj@sj-virtual-machine:~/Assignment1$ ls
+3  dir1  dir2  file  file1  file2  task1  task3
+sj@sj-virtual-machine:~/Assignment1$ ls -l
+total 16
+-rw-rw-r-- 1 sj sj    0 May 26 23:18 3
+drwxrwxr-x 2 sj sj 4096 May 26 23:16 dir1
+drwxrwxr-x 2 sj sj 4096 May 26 23:16 dir2
+-rw-rw-r-- 1 sj sj    0 May 26 23:18 file
+-rw-rw-r-- 1 sj sj    0 May 26 23:18 file1
+-rw-rw-r-- 1 sj sj    0 May 26 23:18 file2
+-rwxrwxrwx 1 sj sj   54 May 26 22:56 task1
+drwxrwxr-x 2 sj sj 4096 May 26 23:13 task3
+sj@sj-virtual-machine:~/Assignment1$ ls
+3  dir1  dir2  file  file1  file2  task1  task3
+sj@sj-virtual-machine:~/Assignment1$ rm file 3
+sj@sj-virtual-machine:~/Assignment1$ ls
+dir1  dir2  file1  file2  task1  task3
+

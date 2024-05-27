@@ -1,0 +1,22 @@
+sj@sj-virtual-machine:~/Assignment1$ pwd
+/home/sj/Assignment1
+sj@sj-virtual-machine:~/Assignment1$ ls
+dir1  dir2  file1  file2  task1  task3
+sj@sj-virtual-machine:~/Assignment1$ ls --classify
+dir1/  dir2/  file1  file2  task1*  task3/
+sj@sj-virtual-machine:~/Assignment1$ cd dir1
+sj@sj-virtual-machine:~/Assignment1/dir1$ ls
+sj@sj-virtual-machine:~/Assignment1/dir1$ cd
+sj@sj-virtual-machine:~$ cd Assignment1/dir2
+sj@sj-virtual-machine:~/Assignment1/dir2$ touch file4
+sj@sj-virtual-machine:~/Assignment1/dir2$ mv file4 Assignment1/dir1
+mv: cannot move 'file4' to 'Assignment1/dir1': No such file or directory
+sj@sj-virtual-machine:~/Assignment1/dir2$ ls
+file4
+sj@sj-virtual-machine:~/Assignment1/dir2$ cd ..
+sj@sj-virtual-machine:~/Assignment1$ mv dir2/file4 dir1
+sj@sj-virtual-machine:~/Assignment1$ ls
+dir1  dir2  file1  file2  task1  task3
+sj@sj-virtual-machine:~/Assignment1$ cd dir1
+sj@sj-virtual-machine:~/Assignment1/dir1$ ls
+file4

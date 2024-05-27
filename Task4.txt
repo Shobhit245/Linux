@@ -1,0 +1,25 @@
+sj@sj-virtual-machine:~$ sudo groupadd group1
+[sudo] password for sj: 
+Sorry, try again.
+[sudo] password for sj: 
+sj@sj-virtual-machine:~$ ls
+Assignment1  Desktop  Documents  Downloads  Hello  Hello.txt  Music  Pictures  Public  snap  Templates  Videos
+sj@sj-virtual-machine:~$ sudo useradd -m -g group1 user01
+sj@sj-virtual-machine:~$ sudo passwd user01
+New password: 
+Retype new password: 
+passwd: password updated successfully
+sj@sj-virtual-machine:~$ sudo usermod -aG developers user01
+usermod: group 'developers' does not exist
+sj@sj-virtual-machine:~$ sudo groupadd developers
+sj@sj-virtual-machine:~$ sudo usermod -aG developers user01
+sj@sj-virtual-machine:~$ ls
+Assignment1  Desktop  Documents  Downloads  Hello  Hello.txt  Music  Pictures  Public  snap  Templates  Videos
+sj@sj-virtual-machine:~$ sudo userdel -r user01
+userdel: user01 mail spool (/var/mail/user01) not found
+sj@sj-virtual-machine:~$ sudo groupdel group1
+sj@sj-virtual-machine:~$ id user01
+id: ‘user01’: no such user
+sj@sj-virtual-machine:~$ last user01
+
+wtmp begins Fri Dec  8 17:56:13 2023

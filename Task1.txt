@@ -1,0 +1,4 @@
+sj@sj-virtual-machine:~/Assignment1$ ls
+task1
+sj@sj-virtual-machine:~/Assignment1$ ls -l task1
+-rwxrwxrwx 1 sj sj 54 May 26 22:56 task1
